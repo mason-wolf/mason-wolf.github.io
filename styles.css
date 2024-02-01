@@ -48,11 +48,6 @@ a:hover {
 
 .card-content {
     padding:1em;
-    text-align: center; 
-}
-
-.card-content img {
-    margin: 0 auto;
 }
 
 @media (max-width: 767px) {
@@ -63,4 +58,8 @@ a:hover {
 
 h1 {
     font-weight: 700;
+}
+
+.app-image {
+    text-align: center;
 }
