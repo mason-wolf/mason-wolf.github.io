@@ -19,6 +19,7 @@ a:hover {
     /* border-bottom:1px solid  #666666; */
     padding: .1em 3em;
     display: flex;
+    margin-top:25px;
 }
 
 .nav h1 {
