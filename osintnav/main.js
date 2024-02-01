@@ -1005,7 +1005,7 @@ class ViewCountryComponent {
         this.route.params.subscribe(res => {
             this.country_name = res.country_name;
         });
-        this.country = this.fileService.getCountry(this.country_name);
+        this.country = this.fileService.getCountry("russia");
     }
     addForce() {
         this.fileService.addForce(this.country_name, this.force);
@@ -1585,17 +1585,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
-/* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "QX6l");
-/* harmony import */ var _view_country_view_country_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./view-country/view-country.component */ "Z9Bl");
-
+/* harmony import */ var _view_country_view_country_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./view-country/view-country.component */ "Z9Bl");
 
 
 
 
 
 const routes = [
-    { path: "", component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_2__["DashboardComponent"] },
-    { path: "view-country/:country_name", component: _view_country_view_country_component__WEBPACK_IMPORTED_MODULE_3__["ViewCountryComponent"] }
+    { path: "", component: _view_country_view_country_component__WEBPACK_IMPORTED_MODULE_2__["ViewCountryComponent"] },
+    { path: "view-country/:country_name", component: _view_country_view_country_component__WEBPACK_IMPORTED_MODULE_2__["ViewCountryComponent"] }
 ];
 class AppRoutingModule {
 }
