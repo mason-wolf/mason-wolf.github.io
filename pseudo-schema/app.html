@@ -1,0 +1,55 @@
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<div class="nav">
+    <a href="javascript:void(0)" onclick="buildForm()">Form Builder</a>
+    <a href="javascript:void(0)" onclick="addData()">Data Builder</a> 
+    <a href="javascript:void(0)" onclick="showImport()">Import</a>
+    <!--<a href="javascript:void(0)" onclick="getDataSets()">Data Sets</a>-->
+</div>
+<div class="form-container">
+    <input type="file" id="upload" style="display:none;"/>
+    <div id="formBuilder">
+        <h1>Template Builder</h1>
+        <form>
+            <label for="formName">Form Name</label>
+            <input type="text" id="formName" name="formName">
+            <label for="fieldName">Field Name</label>
+            <input type="text" id="fieldName" name="fieldName">
+            <label for="fieldType">Field Type</label>
+            <select id="fieldType" name="fieldType">
+                <option>Text</option>
+                <option>Checkbox</option>
+                <option>Textarea</option>
+                <option>Radio</option>
+                <option>Dropdown</option>
+                <option>Date</option>
+            </select>
+        </form>
+        
+        <button type="button" onclick="addField()" class="add-btn">Add Field</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+        <button type="button" onclick="exportData('template')">Export</button>
+        <div id="formTemplate" class="form-template"></div>
+    </div>
+    <div id="dataBuilder" style="display:none;margin-bottom:25px;">
+    </div>
+    
+<!-- Radio field type modal -->
+<div id="radio-field" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+</div>
+</div>
+    <script type="text/javascript" src="utils.js"></script>
+    <script type="text/javascript" src="forms.js"></script>
+    <script type="text/javascript" src="template-builder.js"></script>
+    <script type="text/javascript" src="data-builder.js"></script>
+    <script type="text/javascript" src="io.js"></script>
