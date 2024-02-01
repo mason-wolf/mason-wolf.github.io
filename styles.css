@@ -16,7 +16,7 @@ a:hover {
 }
 
 .nav {
-    border-bottom:1px solid  #666666;
+    /* border-bottom:1px solid  #666666; */
     padding: .1em 3em;
     display: flex;
 }
@@ -28,7 +28,6 @@ a:hover {
 .content {
     display: flex;
     flex-wrap: wrap;
-    margin-top:25px;
     padding: 1em 2em;
 }
 
