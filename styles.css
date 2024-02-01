@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: white;
+    color: #7cd87c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(224, 224, 133);
+}
+
+.nav {
+    border-bottom:1px solid  #666666;
+    padding: .1em 3em;
+    display: flex;
+}
+
+.nav h1 {
+    margin-top:30px;
+    margin-left: 25px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:25px;
+    padding: 1em 2em;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin:10px;
+    border: 1px solid #474747;
+}
+
+.card-header {
+    background-color:#274227;
+    margin-top:-1px;
+    padding: .5em 1em;
+}
+
+.card-content {
+    padding:1em;
+}
+
+@media (max-width: 767px) {
+    .card {
+      width: calc(50% - 20px); /* Adjust margin as needed */
+    }
+  }
+
+h1 {
+    font-weight: 700;
+}
