@@ -26,12 +26,16 @@ a:hover {
     margin-top:30px;
     margin-left: 25px;
 }
+
 .content {
     display: flex;
     flex-wrap: wrap;
     padding: 1em 2em;
 }
 
+.card img {
+    align-items: center;
+}
 .card {
     width: calc(33.33% - 20px);
     box-sizing: border-box;
@@ -51,7 +55,7 @@ a:hover {
 
 @media (max-width: 767px) {
     .card {
-      width: calc(50% - 20px); /* Adjust margin as needed */
+      width: 100%;
     }
   }
 
