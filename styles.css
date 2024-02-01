@@ -33,9 +33,6 @@ a:hover {
     padding: 1em 2em;
 }
 
-.card img {
-    align-items: center;
-}
 .card {
     width: calc(33.33% - 20px);
     box-sizing: border-box;
@@ -51,6 +48,11 @@ a:hover {
 
 .card-content {
     padding:1em;
+    text-align: center; 
+}
+
+.card-content img {
+    margin: 0 auto;
 }
 
 @media (max-width: 767px) {
