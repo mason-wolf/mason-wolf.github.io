@@ -40,17 +40,22 @@ a:hover {
     border: 1px solid #474747;
 }
 
+.card:hover {
+    background-color: rgb(37, 36, 36);
+}
+
 .card-header {
     background-color:#274227;
     margin-top:-1px;
-    padding: .5em 1em;
+    padding: .5em;
 }
 
 .card-content {
-    padding:1em;
+    text-align: center;
+    padding:1em 2em;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .card {
       width: 100%;
     }
@@ -62,4 +67,15 @@ h1 {
 
 .app-image {
     text-align: center;
+}
+
+.card-btn {
+    float:right;
+    background-color: #2d5a2d;
+    color: white;
+    border:1px solid #377037;
+    padding: .5em 2em;
+    margin:25px;
+    margin-top:-10px;
+    cursor: pointer;
 }
